@@ -125,15 +125,9 @@ foreach gutsFile $gutsList {
   }
 }
 if { $argc > 0 } then {
-  if { [lindex $argv 0] eq "db" || [lindex $argv 0] eq "dropbox" } then {
-    puts "Publishing to dropbox"
-    publish "c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Public/"
-    file copy -force \
-      c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Public/index.html \
-      c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Content
-  } elseif { [lindex $argv 0] eq "git" } then {
+  if { [lindex $argv 0] eq "git" } then {
     puts "Publishing to local copy of github pages"
-    publish "c:/Users/oddst/website/oddstream.github.io/Solitaire/"
+    publish "c:/Users/n3xtbatman/website/n3xtbatman.github.io/Solitaire-Final/"
     puts "git add --all"
     puts "git commit -m \"version\""
     puts "git push -u origin master"
