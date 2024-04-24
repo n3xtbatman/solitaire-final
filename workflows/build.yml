@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install TCL
-      run: sudo apt-get update && sudo apt-get install -y tcl
+    - name: Build Docker Image
+      run: docker build -t my-application .
 
-    - name: Run bake.tcl script
-      run: tclsh bake.tcl
+    - name: Run Docker Container
+      run: docker run --name my-running-app my-application
