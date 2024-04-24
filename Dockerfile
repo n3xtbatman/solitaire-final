@@ -1,17 +1,20 @@
-# Use an official base image that has TCL pre-installed or has the capability to install TCL
-FROM ubuntu:latest
+# Start with a base image that has both Java and TCL
+FROM openjdk:8-jdk
 
-# Install TCL
+# Install TCL (if not already present in the base image)
 RUN apt-get update && apt-get install -y tcl
 
 # Set the working directory in the container
-# Assuming that your TCL script and related files are in the root directory of your repo
 WORKDIR /app
 
 # Copy the repository contents into the container
 COPY . /app
 
-# Command to run your TCL script
-# This assumes that your TCL script can be run directly and is executable
-# If there are additional commands required to run your script, include them here
+# Ensure the Closure Compiler JAR is available in the container
+# (This step can be skipped if the JAR is already in your repository and gets copied over)
+ADD https://dl.google.com/closure-compiler/compiler-latest.zip /app/compiler-latest.zip
+RUN unzip compiler-latest.zip closure-compiler-v20191027.jar && \
+    rm compiler-latest.zip
+
+# Set the default command to run your TCL script
 CMD ["tclsh", "bake.tcl"]
