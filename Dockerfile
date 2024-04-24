@@ -1,20 +1,19 @@
-# Start with a base image that has both Java and TCL
-FROM openjdk:8-jdk
+FROM ubuntu:latest
 
-# Install TCL (if not already present in the base image)
-RUN apt-get update && apt-get install -y tcl
+# Install dependencies for downloading and running ActiveTcl
+RUN apt-get update && apt-get install -y wget
 
-# Set the working directory in the container
+# Download and install ActiveTcl
+RUN wget https://downloads.activestate.com/ActiveTcl/releases/8.6.8/ActiveTcl8.6.8.0.298892-linux-x86_64-threaded.tar.gz \
+    && tar -xzf ActiveTcl8.6.8.0.298892-linux-x86_64-threaded.tar.gz \
+    && cd ActiveTcl8.6.8.0.298892-linux-x86_64-threaded \
+    && ./install.sh --prefix /usr/local
+
+# Set the working directory
 WORKDIR /app
 
-# Copy the repository contents into the container
+# Copy the application source code to the container
 COPY . /app
 
-# Ensure the Closure Compiler JAR is available in the container
-# (This step can be skipped if the JAR is already in your repository and gets copied over)
-ADD https://dl.google.com/closure-compiler/compiler-latest.zip /app/compiler-latest.zip
-RUN unzip compiler-latest.zip closure-compiler-v20191027.jar && \
-    rm compiler-latest.zip
-
-# Set the default command to run your TCL script
+# Run your TCL script
 CMD ["tclsh", "bake.tcl"]
