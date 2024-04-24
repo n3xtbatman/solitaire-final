@@ -1,0 +1,51 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Unusual",
+  "Wikipedia":"https://en.wikipedia.org/wiki/Cruel_(solitaire)",
+  "Winnable":[3624,39079,925991,984024],
+  "Stock":{"packs":2},
+  "Foundation":{"suit":2, "rank":1},
+  "Tableau":{"build":{"suit":2, "rank":2}, "move":{"suit":2, "rank":2}, "accept":"\u00D7"}
+}
+</script>  
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="StockCruel">
+      <rect x="0" y="0"></rect>
+    </g>
+
+    <g class="Foundation" deal="♥01"><rect x="4" y="0"></rect></g>
+    <g class="Foundation" deal="♦01"><rect x="5" y="0"></rect></g>
+    <g class="Foundation" deal="♣01"><rect x="6" y="0"></rect></g>
+    <g class="Foundation" deal="♠01"><rect x="7" y="0"></rect></g>
+
+    <g class="Foundation" deal="♥01"><rect x="8" y="0"></rect></g>
+    <g class="Foundation" deal="♦01"><rect x="9" y="0"></rect></g>
+    <g class="Foundation" deal="♣01"><rect x="10" y="0"></rect></g>
+    <g class="Foundation" deal="♠01"><rect x="11" y="0"></rect></g>
+
+    <g class="Tableau" deal="uuuu"><rect x="0"  y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="1"  y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="2" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="3" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="4" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="5" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="6" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="7" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="8" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="9" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="10" y="1"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="11" y="1"></rect></g>
+
+    <g class="Tableau" deal="uuuu"><rect x="0"  y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="1"  y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="2" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="3" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="4" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="5" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="6" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="7" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="8" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="9" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="10" y="4"></rect></g>
+    <g class="Tableau" deal="uuuu"><rect x="11" y="4"></rect></g>

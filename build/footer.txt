@@ -1,0 +1,88 @@
+<div id="modalSettings" class="modal">
+    <div class="modal-content">
+        <h4 class="noselect">Settings<a class="modal-close right noselect hide-on-small-only"><i class="material-icons">close</i></a></h4>
+
+        <p class="range-field">
+            <label for="aniSpeed"><input type="range" id="aniSpeed" min="1" max="5"/><span>Animation speed</span></label>
+        </p>
+        
+        <p><label for="sensoryCues"><input type="checkbox" id="sensoryCues" class="filled-in steelblue"/><span>Highlight movable cards</span></label></p>
+        <p><label for="autoPlay"><input type="checkbox" id="autoPlay" class="filled-in steelblue"/><span>Allow single click to move a card</span></label></p>
+        <div class="row">
+        <div class="col s6">
+        <p><label for="autoAny"><input type="radio" id="autoAny" name="auto" value="any"/><span>Auto collect any card</span></label></p>
+        <p><label for="autoSafe"><input type="radio" id="autoSafe" name="auto" value="safe"/><span>Auto collect when safe</span></label></p>
+        <p><label for="autoSolve"><input type="radio" id="autoSolvable" name="auto" value="solvable"/><span>Auto collect when solveable</span></label></p>
+        <p><label for="autoOff"><input type="radio" id="autoOff" name="auto" value="off"/><span>No auto collect</span></label></p>
+        </div>
+        </div>
+    </div>
+    <!--
+    <div class="modal-footer">
+      <a class="modal-close btn-small steelblue noselect">CLOSE</a>
+    </div>
+    -->
+</div>
+
+<div id="modalStarSeed" class="modal">
+    <div class="modal-content">
+        <p>
+            <input id="starSeed" type="number" autofocus="true" min="0" max="999999" placeholder="Deal number (1-999999)">
+        </p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-close btn-small steelblue noselect" onclick="dostarseeddeal()">Deal</a>
+      <a class="modal-close btn-small steelblue noselect">Cancel</a>
+    </div>
+</div>
+
+<div id="modalStatistics" class="modal">
+    <div class="modal-content">
+      <h4 class="noselect">Statistics<a class="modal-close right noselect hide-on-small-only"><i class="material-icons">close</i></a></h4>
+      <p id="thisGameStats"></p>
+      <p id="gamesPlayedStats"></p>
+      <p id="gamesStreakStats"></p>
+      <p id="gamesTotalStats"></p>
+      <a class="modal-close noselect" onclick="areYouSure('window.dostatsreset')">reset statistics for this game</a>
+    </div>
+</div>
+  
+<div id="modalGameOver" class="modal">
+    <div class="modal-content">
+      <h4 class="noselect hide-on-small-only">Complete</h4>
+      <p id="movesMade"></p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-close btn-small steelblue" onclick="dostar()"><i class="material-icons">star</i> New deal</a>
+    </div>
+</div>
+
+<div id="modalAreYouSure" class="modal">
+    <div class="modal-content">
+      <h4 class="noselect">Are you sure?</h4>
+    </div>
+    <div class="modal-footer">
+      <a id="modalAreYouSureYes" class="modal-close btn-small steelblue">Yes</a>
+      <a id="modalAreYouSureNo"  class="modal-close btn-small steelblue">No</a>
+    </div>
+</div>
+
+<div id="modalShowRules" class="modal">
+    <div class="modal-content">
+        <h4>Rules<a class="modal-close right noselect hide-on-small-only"><i class="material-icons">close</i></a></h4>
+        <div id="therules"></div>
+        <a id="theruleswikipedia" href="" target="_blank" rel="noopener">Wikipedia</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+M.Sidenav.init(document.querySelectorAll('.sidenav'));
+M.Modal.init(document.querySelectorAll('.modal'));
+M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+</script>
+<!-- <script type="text/javascript" src="https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js"></script> -->
+<script type="module" src="./Solitaire.js"></script>
+
+</body>
+</html>

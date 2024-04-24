@@ -1,0 +1,33 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Perseverance",
+  "Wikipedia":"https://en.wikipedia.org/wiki/Perseverance_(solitaire)",
+  "Winnable":[184851,204913,207463,221383,396546,552722,765303,796620,955663],
+  "Stock":{"packs":1},
+  "Foundation":{"suit":2, "rank":1},
+  "Tableau":{"build":{"suit":2, "rank":2}, "move":{"suit":2, "rank":2}, "accept":"\u00D7"}
+}
+</script>  
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="StockCruel">
+      <rect x="0" y="0"></rect>
+    </g>
+
+    <g class="Foundation" deal="♥01"><rect x="8" y="0"></rect></g>
+    <g class="Foundation" deal="♦01"><rect x="9" y="0"></rect></g>
+    <g class="Foundation" deal="♣01"><rect x="10" y="0"></rect></g>
+    <g class="Foundation" deal="♠01"><rect x="11" y="0"></rect></g>
+
+    <g class="TableauTail" deal="uuuu"><rect x="0" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="1" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="2" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="3" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="4" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="5" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="6" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="7" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="8" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="9" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="10" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuu"><rect x="11" y="1"></rect></g>

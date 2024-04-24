@@ -1,0 +1,36 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Penguin",
+  "Wikipedia":"http://www.parlettgames.uk/patience/penguin.html",
+  "Winnable":[528242],
+  "Stock":{"packs":1, "hidden":1},
+  "Foundation":{"suit":2, "rank":1, "rankwrap":1, "scatter":"Left"},
+  "Tableau":{"build":{"suit":2, "rank":2}, "move":{"suit":2, "rank":2}}
+}
+</script>
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="Stock">
+        <rect x="1" y="-1"></rect>
+    </g>
+  
+    <g class="Cell"><rect x="0" y="0"></rect></g>
+    <g class="Cell"><rect x="1" y="0"></rect></g>
+    <g class="Cell"><rect x="2" y="0"></rect></g>
+    <g class="Cell"><rect x="3" y="0"></rect></g>
+    <g class="Cell"><rect x="4" y="0"></rect></g>
+    <g class="Cell"><rect x="5" y="0"></rect></g>
+    <g class="Cell"><rect x="6" y="0"></rect></g>
+
+    <g class="TableauTail" deal="puuuuuu"><rect x="0" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="1" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="2" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="3" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="4" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="5" y="1"></rect></g>
+    <g class="TableauTail" deal="uuuuuuu"><rect x="6" y="1"></rect></g>
+
+    <g class="FoundationPenguin"><rect x="7" y="0"></rect></g>
+    <g class="FoundationPenguin"><rect x="7" y="1"></rect></g>
+    <g class="FoundationPenguin"><rect x="7" y="2"></rect></g>
+    <g class="FoundationPenguin"><rect x="7" y="3"></rect></g>

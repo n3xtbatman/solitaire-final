@@ -1,0 +1,26 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Scorpion",
+  "Wikipedia":"https://en.wikipedia.org/wiki/Scorpion_(solitaire)",
+  "Winnable":[400226,491628,657770,914103,926226],
+  "Foundation":{"suit":2, "rank":2, "accept":"\u2263"},
+  "Tableau":{"build":{"suit":2, "rank":2}, "move":{"suit":1, "rank":5}, "accept":13}
+}
+</script>
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="StockScorpion">
+      <rect x="0" y="0"></rect>
+    </g>
+    <g class="FoundationSpider"><rect x="3" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="4" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="5" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="6" y="0"></rect></g>
+    
+    <g class="TableauSpider" deal="ddduuuu"><rect x="0" y="1"></rect></g>
+    <g class="TableauSpider" deal="ddduuuu"><rect x="1" y="1"></rect></g>
+    <g class="TableauSpider" deal="ddduuuu"><rect x="2" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuu"><rect x="3" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuu"><rect x="4" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuu"><rect x="5" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuu"><rect x="6" y="1"></rect></g>

@@ -1,0 +1,28 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Rainbow",
+  "Wikipedia":"https://en.wikipedia.org/wiki/Canfield_(solitaire)",
+  "Winnable":[126756],
+  "Stock":{"packs":1, "redeals":2},
+  "Foundation":{"suit":2, "rank":1, "rankwrap":1},
+  "Tableau":{"build":{"suit":4, "rank":2, "rankwrap":1}, "move":{"suit":4, "rank":2, "rankwrap":1}}
+}
+</script>
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="StockKlondike">
+      <rect x="0" y="0"></rect>
+    </g>
+    <g class="Waste"><rect x="1" y="0"></rect></g>
+
+    <g class="Reserve" deal="ddddddddddddu"><rect x="0" y="1"></rect></g>
+
+    <g class="FoundationCanfield" deal="u"><rect x="3" y="0"></rect></g>
+    <g class="FoundationCanfield"><rect x="4" y="0"></rect></g>
+    <g class="FoundationCanfield"><rect x="5" y="0"></rect></g>
+    <g class="FoundationCanfield"><rect x="6" y="0"></rect></g>
+
+    <g class="TableauCanfield" deal="u"><rect x="3" y="1"></rect></g>
+    <g class="TableauCanfield" deal="u"><rect x="4" y="1"></rect></g>
+    <g class="TableauCanfield" deal="u"><rect x="5" y="1"></rect></g>
+    <g class="TableauCanfield" deal="u"><rect x="6" y="1"></rect></g>

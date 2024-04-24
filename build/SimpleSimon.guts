@@ -1,0 +1,31 @@
+<script type="application/json" id="rules">
+{
+  "Name":"Simple Simon",
+  "Wikipedia":"https://en.wikipedia.org/wiki/Simple_Simon_(solitaire)",
+  "Winnable":[641950,971669],
+  "Stock":{"packs":1, "hidden":1},
+  "Foundation":{"suit":2, "rank":2, "accept":"\u2263"},
+  "Tableau":{"build":{"suit":1, "rank":2}, "move":{"suit":1, "rank":2}}
+}
+</script>
+
+<svg id="baize" xmlns="http://www.w3.org/2000/svg">
+    <g class="Stock">
+      <rect x="0" y="0"></rect>
+    </g>
+
+    <g class="FoundationSpider"><rect x="6" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="7" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="8" y="0"></rect></g>
+    <g class="FoundationSpider"><rect x="9" y="0"></rect></g>
+
+    <g class="TableauSpider" deal="uuuuuuuu"><rect x="0" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuuu"><rect x="1" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuuu"><rect x="2" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuuu"><rect x="3" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuuu"><rect x="4" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuuu"><rect x="5" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuuu"><rect x="6" y="1"></rect></g>
+    <g class="TableauSpider" deal="uuu"><rect x="7" y="1"></rect></g>
+    <g class="TableauSpider" deal="uu"><rect x="8" y="1"></rect></g>
+    <g class="TableauSpider" deal="u"><rect x="9" y="1"></rect></g>
