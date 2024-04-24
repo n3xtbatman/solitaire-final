@@ -124,14 +124,20 @@ foreach gutsFile $gutsList {
     buildHtml $htmlFile $gutsFile
   }
 }
-
 if { $argc > 0 } then {
-  if { [lindex $argv 0] eq "publish" } then {
-    # This will print the message but won't copy files to a different directory
-    # as we're assuming the build process is already taking place in the correct directory
-    puts "Publishing within the GitHub repository's file system"
-    # You can call the publish procedure without arguments if you're already in the correct directory
-    publish .
+  if { [lindex $argv 0] eq "db" || [lindex $argv 0] eq "dropbox" } then {
+    puts "Publishing to dropbox"
+    publish "c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Public/"
+    file copy -force \
+      c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Public/index.html \
+      c:/Users/oddst/Dropbox/Apps/My.DropPages/oddstream.droppages.com/Content
+  } elseif { [lindex $argv 0] eq "git" } then {
+    puts "Publishing to local copy of github pages"
+    publish "c:/Users/oddst/website/oddstream.github.io/Solitaire/"
+    puts "git add --all"
+    puts "git commit -m \"version\""
+    puts "git push -u origin master"
+  }
   }
 }
 
